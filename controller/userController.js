@@ -8,7 +8,7 @@ const createUser = async (req, res) => {
         const { name, password, email, image } = req.body;
         const passwdCrypt = await bcrypt.hash(password, 10);
         
-        if(!image){
+        if(image == " "){
             image = "https://github.com/Amorim-EA/Aplication-Users/blob/main/src/app/componentes/image/user.png";
         }
 
