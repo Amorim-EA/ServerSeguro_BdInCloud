@@ -1,0 +1,68 @@
+body, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+ul.tecnologias {
+    margin: 15px 0 0 30px
+}
+
+li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.config-container {
+   background-color: #333;
+   margin-top: 20px;
+   max-width: 760px;
+   border-radius: 5px;
+} 
+
+footer {
+    background-color: #333;
+    padding: 15px;
+}

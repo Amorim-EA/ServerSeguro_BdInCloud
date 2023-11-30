@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>API - Users</title>
+</head>
+
+<body>
+  <div class="container config-container">
+    <h1 class="center-text">API - USER</h1>
+    <h2>Tecnologias usadas:</h2>
+    <ul class="tecnologias">
+      <li>Sequelize cli</li>
+      <li>Sequelize</li>
+      <li>Thunder Client</li>
+      <li>JavaScript</li>
+      <li>Express</li>       
+      <li>Jsonwebtoken</li>
+      <li>Mysql2</li>
+      <li>Nodemon</li>
+      <li>Pg</li>
+      <li>Pg-hstore</li>
+      <li>Cors</li>
+      <li>bycriptjs</li>
+      <li>cookie-parser</li>
+    </ul>
+  </div>
+  <div class="container config-container dados">
+  <div class="container">
+    <div class="card">
+      <h2>Buscar somente um unico usuario</h2>
+      <h3>Metodo: GET</h3>
+      <h3>Endpoint:  localhost:3003/user </h3>
+    </div>
+    <div class="card">
+      <h2>Buscar todos os usuarios</h2>
+      <h3>Metodo: GET</h3>
+      <h3>Endpoint: localhost:3003/users </h3>
+    </div>
+    <div class="card">
+      <h2>Cadastrar um usuario</h2>
+      <h3>Metodo: POST</h3>
+      <h3>Endpoint: localhost:3003/user</h3>
+      <h3>Tipos: name: string; password: string; email: string; image: string;</h3>
+    </div>
+    <div class="card">
+      <h2>Alterar um usuario</h2>
+      <h3>Metodo: PUT</h3>
+      <h3>Endpoint: localhost:3003/user/:id</h3>
+      <h3>Tipos: name: string; password: string; email: string; image: string;</h3>
+    </div>
+    <div class="card">
+      <h2>Deletar um usuario</h2>
+      <h3>Metodo: DELETE</h3>
+      <h3>Endpoint: localhost:3003/user/:id</h3>
+    </div>
+    <div class="card">
+      <h2>Criar usuario autentico com token</h2>
+      <h3>Metodo: POST</h3>
+      <h3>Endpoint: localhost:3003/user/authenticated</h3>
+      <h3>Tipos: email: string; password: string;</h3>
+    </div>
+  </div>
+  <footer>
+    <h3 class="center-text">Code by Eder Amorim & Erick Amorim.</h3>
+  </footer>
+</body>
+</html>
