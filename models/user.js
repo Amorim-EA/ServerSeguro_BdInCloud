@@ -19,11 +19,11 @@ const User = db.sequelize.define('user',{
         type: db.Sequelize.STRING,
         allowNull: false,
         unique: true
-    }
+    },
     image: {
         type: db.Sequelize.STRING,
         allowNull: true,
-        unique: true
+        unique: false
     }
 })
 

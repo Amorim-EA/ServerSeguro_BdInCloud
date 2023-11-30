@@ -1,11 +1,11 @@
 {
-  "name": "ptas_trabalho-n1_20-09",
+  "name": "ptas",
   "version": "1.0.0",
-  "description": "Este trabalho de np1 foi feito pelo Erick Amorim e Eder Amorim",
+  "description": "Este trabalho foifeito pelo Erick Amorim",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "create": "npx sequelize-cli db:create"
   },
   "keywords": [],
   "author": "Gemeos",

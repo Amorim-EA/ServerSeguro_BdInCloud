@@ -7,6 +7,11 @@ const createUser = async (req, res) => {
     try {
         const { name, password, email, image } = req.body;
         const passwdCrypt = await bcrypt.hash(password, 10);
+        
+        if(!image){
+            image = "https://github.com/Amorim-EA/Aplication-Users/blob/main/src/app/componentes/image/user.png";
+        }
+
         await User.create({
             name: name,
             password: passwdCrypt,
@@ -75,6 +80,11 @@ const updateUser = async (req, res) => {
         const id = parseInt(req.params.id);
         const { name, password, email, image } = req.body;
         const passwdCrypt = await bcrypt.hash(password, 10);
+
+        if(!image){
+            image = "https://github.com/Amorim-EA/Aplication-Users/blob/main/src/app/componentes/image/user.png";
+        }
+
         await User.update({
             name: name,
             password: passwdCrypt,

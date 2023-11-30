@@ -3,9 +3,7 @@ const config = require('../config/config');
 const pg = require('pg');
 require('dotenv').config();
 
-const cloudBd = config.development.url;
-
-const sequelize = new Sequelize(cloudBd ,{
+const sequelize = new Sequelize(config.development.url ,{
   define: {
     timetamps: true,
     underscored: true,
