@@ -36,7 +36,7 @@ const findAllUser = async (req, res) => {
 
 const findOneUser = async (req, res) => {
     try {
-        const id = req.body.id;
+        const id = parseInt(req.params.id);
         const user = await User.findOne({
             where: {
                 id: id
